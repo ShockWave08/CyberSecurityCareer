@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cybersecurity Career Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Cybersecurity Career Finder</h1>
+      <p class="tag">Answer 15–20 questions and get your top matching cybersecurity roles.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <form id="quizForm" aria-label="Cybersecurity career questionnaire">
+      <div id="questions"></div>
+
+      <div class="controls">
+        <button id="submitBtn" type="submit" class="btn primary">See my matches</button>
+        <button id="resetBtn" type="button" class="btn">Reset</button>
+      </div>
+    </form>
+
+    <section id="results" aria-live="polite" hidden>
+      <h2>Top Matches</h2>
+      <div id="topRoles"></div>
+      <div class="results-actions">
+        <button id="copyBtn" class="btn">Copy results</button>
+        <button id="restartBtn" class="btn">Take again</button>
+      </div>
+    </section>
+
+    <section id="explain" class="explain">
+      <h3>How this works</h3>
+      <p>The answers add weighted points to each of 12 cybersecurity roles. Select 1 or 2 answers per question. The page shows the best matches based on your preferences, skills and experience. </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>Built for learning. No data leaves your browser.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
